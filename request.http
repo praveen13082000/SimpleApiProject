@@ -1,0 +1,30 @@
+###
+
+GET http://localhost:5186/
+Authorization: Bearer HelloWorld123
+
+###
+
+GET http://localhost:5186/user/1
+Authorization: Bearer HelloWorld123
+###
+
+POST http://localhost:5186/user/
+Authorization: Bearer HelloWorld123
+Content-Type: application/json
+
+{
+  "name": "jun",
+  "email": "john.doee@example.com",
+  "department": "Engineering"
+}
+###
+PUT http://localhost:5186/user/1
+Authorization: Bearer HelloWorld123
+Content-Type: application/json
+
+{
+  "name": "John Doe Updated",
+  "email": "john.doe.updated@example.com",
+  "department": "Marketing"
+}
